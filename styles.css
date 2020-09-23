@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap');
+
+body {
+  margin: 0;
+  display: grid;
+  min-height: 100vh;
+  grid-template: 1fr / 2fr 1fr;
+}
+
+main {
+  background-image: url('./images/bg-pattern-desktop.svg');
+  background-position: center;
+  background-clip: border-box;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-left: 25%;
+}
+
+.title {
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 10px;
+  margin-bottom: 15px;
+}
+
+.title span {
+  font-weight: 200;
+  color: hsl(0, 36%, 70%);
+}
+
+.logo {
+  margin-top: 10%;
+}
+
+.presentation {
+  font-family: 'Josefin Sans', sans-serif;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.presentation-information {
+  color: hsl(0, 36%, 70%);
+  line-height: 30px;
+  font-size: 1em;
+}
+
+.hero {
+  height: 100%;
+}
+.hero img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  font-family: 'Josefin sans';
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+  text-decoration: none;
+}
+
+input {
+  background: none;
+  border: 1px solid hsla(0, 6%, 24%, 0.3);
+  border-radius: 30px 0 0 30px;
+  padding: 10px 20px;
+  width: 50%;
+  box-sizing: border-box;
+  font-family: 'Josefin Sans', sans-serif;
+  color: hsl(0, 6%, 24%);
+  height: 100%;
+}
+
+.invalid {
+  border: 1px solid hsl(0, 65%, 65%);
+}
+
+input:focus {
+  outline: none;
+}
+
+input::placeholder {
+  color: hsl(0, 36%, 70%);
+}
+
+.input-after {
+  visibility: hidden;
+  padding-left: 20px;
+  padding-top: 10px;
+  font-size: 14px;
+  color: hsl(0, 60%, 70%);
+}
+
+form {
+  display: flex;
+  align-items: center;
+  margin-top: 25px;
+  position: relative;
+  height: 45px;
+}
+
+.icon-error {
+  visibility: hidden;
+  position: absolute;
+  top: 24%;
+  right: 56%;
+}
+
+.visible {
+  visibility: visible;
+}
+
+button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid hsl(0, 87%, 87%);
+  background: linear-gradient(to left, hsl(0, 74%, 74%), hsl(0, 87%, 87%));
+  width: 75px;
+  height: 100.5%;
+  margin-left: -25px;
+  border-radius: 30px;
+  transition: 0.35s;
+  outline: none;
+  cursor: pointer;
+  z-index: 1;
+}
+
+button:hover {
+  box-shadow: 0 15px 25px 0.5px hsl(0, 85%, 85%);
+  background: linear-gradient(to left, hsl(0, 85%, 85%), hsl(0, 90%, 90%));
+  border: 1px solid hsl(0, 90%, 90%);
+}
